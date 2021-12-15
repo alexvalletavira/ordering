@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ordering Visualizer</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.png" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+    <div id="header" style="display: flex; flex-direction: row">
+
+        <div class="text" style="display: flex; justify-content: center; align-items: center; font-size: 1.1vw;">
+            Ordering Visualization
+        </div>
+
+        <div class="menu" style="display: flex; justify-content: center; align-items: center;">
+            <div class="dropdown">
+                <button class="dropbtn">Select Algorithm ▼</button>
+                <div class="dropdown-content">
+                    <p class="itemDrop" id="switching">Switching</p>
+                    <p class="itemDrop" id="merge">Merge</p>
+                    <p class="itemDrop" id="quick">Quick</p>
+                    <p class="itemDrop" id="bubble">Bubble</p>
+                    <p class="itemDrop" id="selection">Selection</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <button class="coolButton" id="start"> Start!</button>
+        </div>
+
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <button class="coolButton" id="newArray"> New Array</button>
+        </div>
+
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+            <input type="range" min="1" max="100" value="50" class="slider" id="speed" name="speed">
+            <label class="text2" for="speed">Speed</label>
+        </div>
+
+        <div id="status" class="text" style="display: flex; justify-content: center; align-items: center; font-size: 1.1vw;">
+            Ready
+        </div>
+
+
+    </div>
+
+    <div id="main" style="position: absolute; top: 20vh; left: 0vw; width: 100vw; height: 80vh; "></div>
+
+    <div id="tutorial">
+        <div>
+            <div class="textT" style="font-size: 4vh">
+                Welcome to my Ordering Visualizer!
+            </div>
+
+            <div class="textT" style="font-size: 3vh">
+                This is a short explanation on how this works:
+            </div>
+        </div>
+
+        <div class="textT" style="font-size: 2vh">
+            Select an specific sorting algorithm by selecting the "Algorithms" menu.
+        </div>
+
+        <div class="textT" style="font-size: 2vh">
+            Adjuts the speed of the simulation with the slider.
+        </div>
+
+        <div class="textT" style="font-size: 2vh">
+            You will be given a random array with random length and values. If you want a new one, click the "New Array" button.
+        </div>
+
+        <div class="textT" style="font-size: 2vh">
+            Press start to initialize the simulation. A new simulation cannot be started until you finish the last one.
+        </div>
+
+        <div style="display: flex; justify-content: center">
+            <button id="buttonTutorial" id="okTutorial">Okay!</button>
+        </div>
+
+    </div>
+
+    <div style="position: absolute; bottom: 0px; right: 0px; font-size: 0.8vw; user-select: none">
+        Made by Alex Valle, 2021
+    </div>
+
+<script src="index.js" type="module"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+</body>
+
+
+</html>
